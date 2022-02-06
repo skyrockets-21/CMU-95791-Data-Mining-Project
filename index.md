@@ -20,9 +20,7 @@ years of the supervision start date, is an important measurement of supervision 
 the entire time people were under supervision or until the date of recidivism for those arrested.
 
 We are interested in discovering patterns behind recidivism and therefore predicting
-recidivism using data mining techniques and governmental datasets.
-
-Ideally, with well-understood relationships between recidivism and predictors, we can
+recidivism using data mining techniques and governmental datasets. Ideally, with well-understood relationships between recidivism and predictors, we can
 hopefully help reduce violent crime, and protect police and other public safety personnel by
 reducing recidivism.
 
@@ -31,6 +29,9 @@ Data Cleaning and Visualizations
 
 ### Jupyter Notebook 2 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part2_question1.ipynb) 
 Given an individual's criminal record, is he/she likely to recidivate* and what are the main features associated with recidivism?
+
+According to our best model (Gradient Boosting), we discoved employment-related features are the most important features associated with recidivism:
+![image](https://user-images.githubusercontent.com/22537687/152690636-10315cd1-b12f-4d96-9689-e6ffe48e5d22.png)
 
 **Models Used** \
 This question can be answered with classification models and feature importance. Here we will explore six classification models as follows:
