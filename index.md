@@ -15,8 +15,6 @@ See my projects in detail:
 ### Team Members:
 Jamie Lim, Tina Fung, Thomas Tam 
 
----
-
 ### Introduction
 Recidivism, defined as an arrest for a new felony or misdemeanor crime within three
 years of the supervision start date, is an important measurement of supervision activities during
