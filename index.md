@@ -34,7 +34,7 @@ According to our best model (Gradient Boosting), we discoved employment-related 
 ![image](https://user-images.githubusercontent.com/22537687/152690636-10315cd1-b12f-4d96-9689-e6ffe48e5d22.png)
 
 **Models Used** \
-This question can be answered with classification models and feature importance. Here we will explore six classification models as follows:
+This question was answered with classification models and feature importance. Here we explored six classification models as follows:
 
 1. Logistic Regression
 2. K-Nearest Neighbors
@@ -51,7 +51,7 @@ If an individual is classified as a potential recidivist, in which year* is he/s
 Question 2 is a follow-up for Question 1：if an individual is classified as recidivist by the best model from Q1, we would like to predict in which year* the recidivism arrest is likely to occur, and what features are associated with the difference in arrest years.
 
 **Models Used** \
-This question can be answered with multi-class classification models and feature importance. Here we will explore four classification models as follows:
+This question was answered with multi-class classification models and feature importance. Here we explored four classification models as follows:
 
 1. K-Nearest Neighbors
 2. Naive Bayes Classifier
@@ -63,7 +63,7 @@ This question can be answered with multi-class classification models and feature
 ### Jupyter Notebook 4 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part4_question3%2Bsummary.ipynb) 
 What are the characteristics of subgroups of recidivists?
 
-For this task, in order to discover the latent structure in our dataset, we use models from unsupervised learning.
+For this task, in order to discover the latent structure in our dataset, we used models from unsupervised learning.
 
 **Models Used** \
 We focus here the 2 clustering approaches, namely:
