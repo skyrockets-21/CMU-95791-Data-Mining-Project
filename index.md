@@ -26,12 +26,10 @@ Ideally, with well-understood relationships between recidivism and predictors, w
 hopefully help reduce violent crime, and protect police and other public safety personnel by
 reducing recidivism.
 
-### Jupyter Notebook 1:
-https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part1_intro%2Bdata_cleaning.ipynb \
+### Jupyter Notebook 1 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part1_intro%2Bdata_cleaning.ipynb) 
 Data Cleaning and Visualizations
 
-### Jupyter Notebook 2: 
-https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part2_question1.ipynb \
+### Jupyter Notebook 2 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part2_question1.ipynb) 
 Given an individual's criminal record, is he/she likely to recidivate* and what are the main features associated with recidivism?
 
 **Models Used** \
@@ -45,8 +43,7 @@ This question can be answered with classification models and feature importance.
 
 \*recidivate within 3 years of parole supervision start date
 
-### Jupyter Notebook 3:
-https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part3_question2.ipynb \
+### Jupyter Notebook 3 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part3_question2.ipynb) 
 If an individual is classified as a potential recidivist, in which year* is he/she likely to recidivate and what features are associated with the difference in arrest years?
 
 
@@ -62,8 +59,7 @@ This question can be answered with multi-class classification models and feature
 
 \*Year 1 if the recidivism arrest occurred in year 
 
-### Jupyter Notebook 4: 
-https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part4_question3%2Bsummary.ipynb \
+### Jupyter Notebook 4 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part4_question3%2Bsummary.ipynb) 
 What are the characteristics of subgroups of recidivists?
 
 For this task, in order to discover the latent structure in our dataset, we use models from unsupervised learning.
@@ -75,6 +71,6 @@ We focus here the 2 clustering approaches, namely:
 2. Hiearchical Clustering (Agglomerative)
 
 ### Dataset Source
-https://data.ojp.usdoj.gov/stories/s/daxx-hznc
+[https://data.ojp.usdoj.gov/stories/s/daxx-hznc](https://data.ojp.usdoj.gov/stories/s/daxx-hznc)
 
 &copy; Thomas Tam
