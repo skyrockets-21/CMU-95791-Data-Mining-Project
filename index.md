@@ -11,8 +11,10 @@ See my projects in detail:
 ![image](https://user-images.githubusercontent.com/22537687/152667377-b2c071fb-1f93-477b-bb03-bcc426a277a1.png)
 
 ---
+
 ### Team Members:
-Jamie Lim, Tina Fung, Thomas Tam
+Jamie Lim, Tina Fung, Thomas Tam 
+
 ---
 
 ### Introduction
