@@ -24,8 +24,15 @@ recidivism using data mining techniques and governmental datasets. Ideally, with
 hopefully help reduce violent crime, and protect police and other public safety personnel by
 reducing recidivism.
 
-### Jupyter Notebook 1 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part1_intro%2Bdata_cleaning.ipynb) 
-Data Cleaning and Visualizations
+### Data Cleaning and Visualizations 
+Jupyter Notebook 1 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part1_intro%2Bdata_cleaning.ipynb) 
+The goal of this session is to understand the dataset and preprocess for doownstream analysis
+
+Tasks, including but not limited to:
+1. Check null values in the dataset
+2. Impute data based on prior knowledge and domain knowledge
+3. Determine which features can be dropped
+4. 
 
 ### Jupyter Notebook 2 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part2_question1.ipynb) 
 Given an individual's criminal record, is he/she likely to recidivate* and what are the main features associated with recidivism?
