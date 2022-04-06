@@ -32,7 +32,7 @@ This dataset contains 25,835 individuals from the State of Georgia released from
     - Recidivism Within 3 years: Binary (0 = No, 1 = Yes) \
     - Recidivism_Arrest_Year1: Binary (0 = No, 1 = Yes) \
     - Recidivism_Arrest_Year2: Binary (0 = No, 1 = Yes) \
-    - Recidivism_Arrest_Year3: Binary (0 = No, 1 = Yes) \
+    - Recidivism_Arrest_Year3: Binary (0 = No, 1 = Yes) 
 
 ● Number of Features (Xs): 48 \
 ● Number of numerical features: 8 (no. 7 and no. 42-48 in the codebook) \
@@ -43,7 +43,7 @@ This dataset contains 25,835 individuals from the State of Georgia released from
     - Prior Georgia Criminal History \
     - Prior Georgia Community Supervision History \
     - Georgia Board of Pardons and Paroles Conditions of Supervision \
-    - Supervision Activities \
+    - Supervision Activities 
 
 ## Task 0. Understanding the Criminal Justice Systems and Definitions in Georgia
 Our team has spent considerable time to firstly understand the criminal justice system (especially in Georgia) while we are looking at the data. Meaningful analysis can only be done with a clear understanding of what and how the data looks like, before we can ask why.
