@@ -1,4 +1,4 @@
-## Predicting Recidivism
+# Predicting Recidivism
 
 ---
 
@@ -11,10 +11,10 @@ See my projects in detail:
 
 ---
 
-### Team Members:
+## Team Members:
 Jamie Lim, Tina Fung, Thomas Tam 
 
-### Introduction
+## Introduction
 Recidivism, defined as an arrest for a new felony or misdemeanor crime within three
 years of the supervision start date, is an important measurement of supervision activities during
 the entire time people were under supervision or until the date of recidivism for those arrested.
@@ -24,7 +24,7 @@ recidivism using data mining techniques and governmental datasets. Ideally, with
 hopefully help reduce violent crime, and protect police and other public safety personnel by
 reducing recidivism.
 
-### Dataset
+## Dataset
 Source: https://data.ojp.usdoj.gov/stories/s/daxx-hznc
 This dataset contains 25,835 individuals from the State of Georgia released from Georgia prisons on discretionary parole to the custody of the Georgia Department of Community Supervision (GDCS) for the purpose of post-incarceration supervision between January 1, 2013 and December 31, 2015.
 
@@ -50,10 +50,10 @@ This dataset contains 25,835 individuals from the State of Georgia released from
 - Georgia Board of Pardons and Paroles Conditions of Supervision
 - Supervision Activities|
 
-### Task 0. Understanding the Criminal Justice Systems and Definitions in Georgia
-Our team has spent considerable time to firstly understand the criminal justice system while we are looking at the data. Meaningful analysis can only be done with a clear understanding of what and how the data looks like, before we can ask why.
+## Task 0. Understanding the Criminal Justice Systems and Definitions in Georgia
+Our team has spent considerable time to firstly understand the criminal justice system (especially in Georgia) while we are looking at the data. Meaningful analysis can only be done with a clear understanding of what and how the data looks like, before we can ask why.
 
-### Task 1. Data Cleaning and Visualizations 
+## Task 1. Data Cleaning and Visualizations 
 Jupyter Notebook 1 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part1_intro%2Bdata_cleaning.ipynb) \
 The goal of this task is to understand the dataset and preprocess for downstream analysis
 
@@ -79,9 +79,10 @@ From the plot above, we can see that the percentage of recidivised is higher for
 </div>
 we can see that younger people (left side of the plot) are more likely to recidivised. And gang affiliated people are more associated with recidivisim.
 
-### Task 2 Predicting Recidivism (Recidivsed / Not Recidivsed)
+## Task 2 Predicting Recidivism (Recidivsed / Not Recidivsed)
 Jupyter Notebook 2 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part2_question1.ipynb) \
-**Question: Given an individual's criminal record, is he/she likely to recidivate* and what are the main features associated with recidivism?**
+
+*Question: Given an individual's criminal record, is he/she likely to recidivate* and what are the main features associated with recidivism?*
 
 According to our best model (Gradient Boosting), we discoved employment-related features are the most important features associated with recidivism:
 
@@ -100,7 +101,7 @@ This question was answered with classification models and feature importance. He
 
 \*recidivate within 3 years of parole supervision start date
 
-### Summary and Interpretation of Classification Results from the Best Model
+## Summary and Interpretation of Classification Results from the Best Model
 - Since our goal is to use personal information, criminal and supervision history to predict the probability a person will commit new felony/misdemeanor crime within 3 years of parole supervision start date（from the perspective of public safety), we would focus more on **recall related to true positive rate** $Recall = \frac{TP}{TP \+ FN}$
 
 
