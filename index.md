@@ -53,7 +53,7 @@ Supervision Activities|
 Our team has spent considerable time to firstly understand the criminal justice system while we are looking at the data. Meaningful analysis can only be done with a clear understanding of what and how the data looks like, before we can ask why.
 
 ### Task 1. Data Cleaning and Visualizations 
-Jupyter Notebook 1 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part1_intro%2Bdata_cleaning.ipynb) \\
+Jupyter Notebook 1 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part1_intro%2Bdata_cleaning.ipynb) \
 The goal of this task is to understand the dataset and preprocess for downstream analysis
 
 Preprocessing tasks, including but not limited to:
@@ -72,9 +72,9 @@ Below are some examples showing interesting patterns:
 </div>
 ![image](https://user-images.githubusercontent.com/22537687/162010681-1b93b24c-e7a4-4508-ab25-964bc940df27.png)
 
-### Task 2.1 Predicting Recidivism (Recidivsed / Not Recidivsed)
-Jupyter Notebook 2 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part2_question1.ipynb) \\
-**Question 1: Given an individual's criminal record, is he/she likely to recidivate* and what are the main features associated with recidivism?**
+### Task 2 Predicting Recidivism (Recidivsed / Not Recidivsed)
+Jupyter Notebook 2 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part2_question1.ipynb) \
+**Question: Given an individual's criminal record, is he/she likely to recidivate* and what are the main features associated with recidivism?**
 
 According to our best model (Gradient Boosting), we discoved employment-related features are the most important features associated with recidivism:
 ![image](https://user-images.githubusercontent.com/22537687/152690636-10315cd1-b12f-4d96-9689-e6ffe48e5d22.png)
@@ -90,34 +90,22 @@ This question was answered with classification models and feature importance. He
 
 \*recidivate within 3 years of parole supervision start date
 
-### Task 2.2 Predicting Recidivism (Year 1/2/3)
-Jupyter Notebook 3 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part3_question2.ipynb) 
-**Question 2: If an individual is classified as a potential recidivist, in which year* is he/she likely to recidivate and what features are associated with the difference in arrest years?**
+### Summary and Interpretation of Classification Results from the Best Model
+- Since our goal is to use personal information, criminal and supervision history to predict the probability a person will commit new felony/misdemeanor crime within 3 years of parole supervision start date（from the perspective of public safety), we would focus more on **recall related to true positive rate** $Recall = \frac{TP}{TP+FN}$
 
 
-Question 2 is a follow-up for Question 1：if an individual is classified as recidivist by the best model from Q1, we would like to predict in which year* the recidivism arrest is likely to occur, and what features are associated with the difference in arrest years.
+- In this case, FN is more costly than FP
+    - FN: recidivists not classified as recidivists
+    - FP: non-recidivists classified as recidivists
+    - **FN cases would be a potential threat to public safety if not well addressed. Therefore, we want to increase TP and lower FN**
 
-**Models Used** \
-This question was answered with multi-class classification models and feature importance. Here we explored four classification models as follows:
 
-1. K-Nearest Neighbors
-2. Naive Bayes Classifier
-3. Random Forest
-4. Gradient Boosting
+- Our best model has an accuracy of 73.6% and a recall rate of 84.7%
+    - $Accuracy = \frac{TP+TN}{N}$
+        - The proportion correctly classified recidivists and non-recidivists by our model on the test data is 73.6%
+    - $Recall = \frac{TP}{TP+FN}$ 
+        - Among all recidivists, the proportion of correctly classified recidivists by our model on the test data is 84.7%
 
-\*For example, `Year 1` if the recidivism arrest occurred in a year 
-
-### Task 3 Clustering and Feature 
-Jupyter Notebook 4 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part4_question3%2Bsummary.ipynb) 
-**Question 3: What are the characteristics of subgroups of recidivists?**
-
-For this task, in order to discover the latent structure in our dataset, we used models from unsupervised learning.
-
-**Models Used** \
-We focus here the 2 clustering approaches, namely:
-
-1. K-means Clustering
-2. Hiearchical Clustering (Agglomerative)
-
+We do not discuss precision here because our main discussion is public safety. We would focus more on precision related to the false positive rate if our goal is to prevent wrongful convictions (future discussion).
 
 &copy; Thomas Tam
