@@ -70,8 +70,9 @@ Below are some examples showing interesting patterns:
 <div>
 <img src="https://user-images.githubusercontent.com/22537687/162011184-c63a1a6c-fa7a-4bcb-8e68-028ef1e935c7.png" width="500"/>
 </div>
-![image](https://user-images.githubusercontent.com/22537687/162010681-1b93b24c-e7a4-4508-ab25-964bc940df27.png)
-
+<div>
+<img src="https://user-images.githubusercontent.com/22537687/162010681-1b93b24c-e7a4-4508-ab25-964bc940df27.png)"
+width="500"/>
 ### Task 2 Predicting Recidivism (Recidivsed / Not Recidivsed)
 Jupyter Notebook 2 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part2_question1.ipynb) \
 **Question: Given an individual's criminal record, is he/she likely to recidivate* and what are the main features associated with recidivism?**
@@ -103,7 +104,7 @@ This question was answered with classification models and feature importance. He
 - Our best model has an accuracy of 73.6% and a recall rate of 84.7%
 
     - Accuracy = (TP+TN)/N
-        - The proportion correctly classified recidivists and non-recidivists by our model on the test data is 73.6% \
+        - The proportion correctly classified recidivists and non-recidivists by our model on the test data is 73.6% 
 
     - Recall = TP/(TP+FN)
         - Among all recidivists, the proportion of correctly classified recidivists by our model on the test data is 84.7%
