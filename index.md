@@ -66,12 +66,12 @@ Apply plotting techniques, such as facetgrid, box plot, and correlation plot, to
 Below are some examples showing interesting patterns:
 
 <div>
-<img src="https://user-images.githubusercontent.com/22537687/162011184-c63a1a6c-fa7a-4bcb-8e68-028ef1e935c7.png" width="500"/>
+<img src="https://user-images.githubusercontent.com/22537687/162011184-c63a1a6c-fa7a-4bcb-8e68-028ef1e935c7.png" height="500"/>
 </div>
 From the plot above, we can see that the percentage of recidivised is higher for male than female, while female are less likely to be recidivised. 
 
 <div>
-<img src="https://user-images.githubusercontent.com/22537687/162010681-1b93b24c-e7a4-4508-ab25-964bc940df27.png" width="500"/>
+<img src="https://user-images.githubusercontent.com/22537687/162010681-1b93b24c-e7a4-4508-ab25-964bc940df27.png" height="500"/>
 </div>
 we can see that younger people (left side of the plot) are more likely to recidivised. And gang affiliated people are more associated with recidivisim.
 
