@@ -91,7 +91,7 @@ This question was answered with classification models and feature importance. He
 \*recidivate within 3 years of parole supervision start date
 
 ### Summary and Interpretation of Classification Results from the Best Model
-- Since our goal is to use personal information, criminal and supervision history to predict the probability a person will commit new felony/misdemeanor crime within 3 years of parole supervision start date（from the perspective of public safety), we would focus more on **recall related to true positive rate** $Recall = \frac{TP}{TP+FN}$
+- Since our goal is to use personal information, criminal and supervision history to predict the probability a person will commit new felony/misdemeanor crime within 3 years of parole supervision start date（from the perspective of public safety), we would focus more on **recall related to true positive rate** $Recall = \frac{TP}{TP \+ FN}$
 
 
 - In this case, FN is more costly than FP
@@ -101,9 +101,10 @@ This question was answered with classification models and feature importance. He
 
 
 - Our best model has an accuracy of 73.6% and a recall rate of 84.7%
-- <img src="https://render.githubusercontent.com/render/math?math=\textrm{Accuracy} =\frac{TP+TN}{N}">
+- <img src="https://render.githubusercontent.com/render/math?math=\textrm{Accuracy} =\frac{TP + TN}{N}">
     - $Accuracy = \frac{TP+TN}{N}$
-        - The proportion correctly classified recidivists and non-recidivists by our model on the test data is 73.6%
+        - The proportion correctly classified recidivists and non-recidivists by our model on the test data is 73.6%\
+    -<img src="https://render.githubusercontent.com/render/math?math=\textrm{Recall} = \frac{TP}{TP+FN}">
     - $Recall = \frac{TP}{TP+FN}$ 
         - Among all recidivists, the proportion of correctly classified recidivists by our model on the test data is 84.7%
 
