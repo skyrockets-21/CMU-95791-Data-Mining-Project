@@ -101,11 +101,11 @@ This question was answered with classification models and feature importance. He
 
 
 - Our best model has an accuracy of 73.6% and a recall rate of 84.7%
-- <img src="https://render.githubusercontent.com/render/math?math=\textrm{Accuracy} =\frac{TP + TN}{N}">
-    - $Accuracy = \frac{TP+TN}{N}$
-        - The proportion correctly classified recidivists and non-recidivists by our model on the test data is 73.6%\
-    -<img src="https://render.githubusercontent.com/render/math?math=\textrm{Recall} = \frac{TP}{TP+FN}">
-    - $Recall = \frac{TP}{TP+FN}$ 
+
+    - Accuracy = (TP+TN)/N
+        - The proportion correctly classified recidivists and non-recidivists by our model on the test data is 73.6% \
+
+    - Recall = TP/(TP+FN)
         - Among all recidivists, the proportion of correctly classified recidivists by our model on the test data is 84.7%
 
 We do not discuss precision here because our main discussion is public safety. We would focus more on precision related to the false positive rate if our goal is to prevent wrongful convictions (future discussion).
