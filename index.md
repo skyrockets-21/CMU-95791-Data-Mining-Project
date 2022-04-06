@@ -101,6 +101,7 @@ This question was answered with classification models and feature importance. He
 
 
 - Our best model has an accuracy of 73.6% and a recall rate of 84.7%
+- <img src="https://render.githubusercontent.com/render/math?math=\textrm{Accuracy} =\frac{TP+TN}{N}">
     - $Accuracy = \frac{TP+TN}{N}$
         - The proportion correctly classified recidivists and non-recidivists by our model on the test data is 73.6%
     - $Recall = \frac{TP}{TP+FN}$ 
