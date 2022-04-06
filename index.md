@@ -29,32 +29,27 @@ Source: https://data.ojp.usdoj.gov/stories/s/daxx-hznc
 This dataset contains 25,835 individuals from the State of Georgia released from Georgia prisons on discretionary parole to the custody of the Georgia Department of Community Supervision (GDCS) for the purpose of post-incarceration supervision between January 1, 2013 and December 31, 2015.
 
 ● Number of Possible Target Variables (Y): 4 , all categorical variables Recidivism is measured as an arrest for a new felony or misdemeanor crime within three years of the supervision start date. 
-
 - Recidivism Within 3 years: Binary (0 = No, 1 = Yes) 
 - Recidivism_Arrest_Year1: Binary (0 = No, 1 = Yes) 
 - Recidivism_Arrest_Year2: Binary (0 = No, 1 = Yes) 
 - Recidivism_Arrest_Year3: Binary (0 = No, 1 = Yes)
-
 ● Number of Features (Xs): 48
-
 ● Number of numerical features: 8 (no. 7 and no. 42-48 in the codebook)
-
 ● Number of categorical features: 40
-
 ● There are 6 subgroups of features:
-
 - Supervision Case Information
 - Prison Case Information
 - Prior Georgia Criminal History
 - Prior Georgia Community Supervision History
 - Georgia Board of Pardons and Paroles Conditions of Supervision
-- Supervision Activities|
+- Supervision Activities
 
 ## Task 0. Understanding the Criminal Justice Systems and Definitions in Georgia
 Our team has spent considerable time to firstly understand the criminal justice system (especially in Georgia) while we are looking at the data. Meaningful analysis can only be done with a clear understanding of what and how the data looks like, before we can ask why.
 
 ## Task 1. Data Cleaning and Visualizations 
-Jupyter Notebook 1 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part1_intro%2Bdata_cleaning.ipynb) \
+Jupyter Notebook 1 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part1_intro%2Bdata_cleaning.ipynb) 
+
 The goal of this task is to understand the dataset and preprocess for downstream analysis
 
 Preprocessing tasks, including but not limited to:
@@ -97,7 +92,37 @@ This question was answered with classification models and feature importance. He
 2. K-Nearest Neighbors
 3. Naive Bayes Classifier
 4. Random Forest
-5. Boosting (Gradient/ Adaboost)
+5. Boosting (Gradient)
+6. Boosting (Adaboost)
+
+### 2.1 Evaluation of ROC Curve / AUC
+
+![image](https://user-images.githubusercontent.com/22537687/162040799-ed928331-675d-434a-b94c-6ad9b635d54f.png)
+
+- **ROC: Receiver Operating Characteristics**
+    - Measure of a classifier’s predictive quality that compares and visualizes the tradeoff between the model’s sensitivity and specificity. Can simultaneously display the two types of errors (**false positive rate** & **true positive rate**) for all possible thresholds.
+    - **The true positive rate (TPR) is the sensitivity**: the fraction of recidivised cases within three years that are correctly identified, using a given threshold value. 
+    - **The false positive rate (FPR) is 1-specificity**: the fraction of non-recidivised cases that we classify incorrectly as recidivised cases, using that same threshold value.
+    - The threshold value decreases along the curve from lower left to upper right. 
+        - When threshold decreases, TPR and FPR increase. 
+        - When threshold increases, TPR and FPR decrease. 
+        
+    
+- **AUC: Area Under The Curve**
+    - Measure the area under the ROC curve
+    - Computation of the relationship between false positives and true positives.
+    - Ranges from 0 to 1
+    - The worst case would be a random classifier with AUC = 0.5 (diagonal)
+    - "As a rule of thumb, an AUC above 0.85 means high classification accuracy, one between 0.75 and 0.85 moderate accuracy, and one less than 0.75 low accuracy" (D' Agostino, Rodgers, & Mauck, 2018)
+ 
+
+- **Ideal Case**
+    - An ideal ROC curve will stay closer to the top left corner, so the larger area under the curve (AUC), the better the classifier. 
+    
+    
+- **Model Evaluation**
+    - Among the 6 classification models, the Gradient Boosting model yields the highest AUC of 0.801, which is considered to have moderate accuracy, so we pick it as the best model.
+
 
 \*recidivate within 3 years of parole supervision start date
 
