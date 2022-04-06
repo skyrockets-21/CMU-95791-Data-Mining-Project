@@ -43,12 +43,13 @@ This dataset contains 25,835 individuals from the State of Georgia released from
 
 ● There are 6 subgroups of features:
 
-Supervision Case Information
-Prison Case Information
-Prior Georgia Criminal History
-Prior Georgia Community Supervision History
-Georgia Board of Pardons and Paroles Conditions of Supervision
-Supervision Activities|
+- Supervision Case Information
+- Prison Case Information
+- Prior Georgia Criminal History
+- Prior Georgia Community Supervision History
+- Georgia Board of Pardons and Paroles Conditions of Supervision
+- Supervision Activities|
+
 ### Task 0. Understanding the Criminal Justice Systems and Definitions in Georgia
 Our team has spent considerable time to firstly understand the criminal justice system while we are looking at the data. Meaningful analysis can only be done with a clear understanding of what and how the data looks like, before we can ask why.
 
@@ -67,18 +68,26 @@ Visualization tasks:
 
 Apply plotting techniques, such as facetgrid, box plot, and correlation plot, to discover interesting relationships 
 Below are some examples showing interesting patterns:
+
 <div>
 <img src="https://user-images.githubusercontent.com/22537687/162011184-c63a1a6c-fa7a-4bcb-8e68-028ef1e935c7.png" width="500"/>
 </div>
+From the plot above, we can see that the percentage of recidivised is higher for male than female, while female are less likely to be recidivised. 
+
 <div>
-<img src="https://user-images.githubusercontent.com/22537687/162010681-1b93b24c-e7a4-4508-ab25-964bc940df27.png)"
-width="500"/>
+<img src="https://user-images.githubusercontent.com/22537687/162010681-1b93b24c-e7a4-4508-ab25-964bc940df27.png" width="500"/>
+</div>
+we can see that younger people (left side of the plot) are more likely to recidivised. And gang affiliated people are more associated with recidivisim.
+
 ### Task 2 Predicting Recidivism (Recidivsed / Not Recidivsed)
 Jupyter Notebook 2 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part2_question1.ipynb) \
 **Question: Given an individual's criminal record, is he/she likely to recidivate* and what are the main features associated with recidivism?**
 
 According to our best model (Gradient Boosting), we discoved employment-related features are the most important features associated with recidivism:
-![image](https://user-images.githubusercontent.com/22537687/152690636-10315cd1-b12f-4d96-9689-e6ffe48e5d22.png)
+
+<div>
+<img src="https://user-images.githubusercontent.com/22537687/162039703-f94bfefa-1f03-4633-a6eb-0a8d31076aa0.png" width="500"/>
+</div>
 
 **Models Used** \
 This question was answered with classification models and feature importance. Here we explored six classification models as follows:
