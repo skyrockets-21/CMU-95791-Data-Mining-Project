@@ -80,7 +80,7 @@ From the plot above, we can see that the percentage of recidivised is higher for
 we can see that younger people (left side of the plot) are more likely to recidivised. And gang affiliated people are more associated with recidivisim.
 
 ## Task 2 Predicting Recidivism (Recidivsed / Not Recidivsed)
-Jupyter Notebook 2 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part2_question1.ipynb) \
+Jupyter Notebook 2 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part2_question1.ipynb) 
 
 *Question: Given an individual's criminal record, is he/she likely to recidivate* and what are the main features associated with recidivism?*
 
@@ -101,7 +101,7 @@ This question was answered with classification models and feature importance. He
 
 \*recidivate within 3 years of parole supervision start date
 
-## Summary and Interpretation of Classification Results from the Best Model
+## Task3 Interpretation: Classification Results from the Best Model
 - Since our goal is to use personal information, criminal and supervision history to predict the probability a person will commit new felony/misdemeanor crime within 3 years of parole supervision start date（from the perspective of public safety), we would focus more on **recall related to true positive rate** $Recall = \frac{TP}{TP \+ FN}$
 
 
