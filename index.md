@@ -71,7 +71,7 @@ Below are some examples showing interesting patterns:
 
 From the plot above, we can see that the percentage of recidivised is higher for male than female, while female are less likely to be recidivised. 
 
-![image](https://user-images.githubusercontent.com/22537687/162010681-1b93b24c-e7a4-4508-ab25-964bc940df27.png) 
+![image](https://user-images.githubusercontent.com/22537687/162043306-4c35d6a1-b049-4542-84ad-ceb91b849f5f.png)
 
 Younger people (left side of the plot) are more likely to recidivised. And gang affiliated people are more associated with recidivisim.
 
