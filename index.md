@@ -77,7 +77,7 @@ we can see that younger people (left side of the plot) are more likely to recidi
 ## Task 2 Predicting Recidivism (Recidivsed / Not Recidivsed)
 Jupyter Notebook 2 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivism/blob/main/part2_question1.ipynb) 
 
-*Question: Given an individual's criminal record, is he/she likely to recidivate* and what are the main features associated with recidivism?*
+*Question: Given an individual's criminal record, is he/she likely to recidivate* and what are the main features associated with recidivism?
 
 According to our best model (Gradient Boosting), we discoved employment-related features are the most important features associated with recidivism:
 
@@ -106,20 +106,14 @@ This question was answered with classification models and feature importance. He
     - The threshold value decreases along the curve from lower left to upper right. 
         - When threshold decreases, TPR and FPR increase. 
         - When threshold increases, TPR and FPR decrease. 
-        
-    
+            
 - **AUC: Area Under The Curve**
     - Measure the area under the ROC curve
     - Computation of the relationship between false positives and true positives.
     - Ranges from 0 to 1
     - The worst case would be a random classifier with AUC = 0.5 (diagonal)
     - "As a rule of thumb, an AUC above 0.85 means high classification accuracy, one between 0.75 and 0.85 moderate accuracy, and one less than 0.75 low accuracy" (D' Agostino, Rodgers, & Mauck, 2018)
- 
-
-- **Ideal Case**
-    - An ideal ROC curve will stay closer to the top left corner, so the larger area under the curve (AUC), the better the classifier. 
-    
-    
+   
 - **Model Evaluation**
     - Among the 6 classification models, the Gradient Boosting model yields the highest AUC of 0.801, which is considered to have moderate accuracy, so we pick it as the best model.
 
@@ -127,7 +121,7 @@ This question was answered with classification models and feature importance. He
 \*recidivate within 3 years of parole supervision start date
 
 ## Task3 Interpretation: Classification Results from the Best Model
-- Since our goal is to use personal information, criminal and supervision history to predict the probability a person will commit new felony/misdemeanor crime within 3 years of parole supervision start date（from the perspective of public safety), we would focus more on **recall related to true positive rate** $Recall = \frac{TP}{TP \+ FN}$
+- Since our goal is to use personal information, criminal and supervision history to predict the probability a person will commit new felony/misdemeanor crime within 3 years of parole supervision start date（from the perspective of public safety), we would focus more on **recall related to true positive rate** Recall = TP/(TP+FN)
 
 
 - In this case, FN is more costly than FP
