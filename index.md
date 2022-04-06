@@ -71,9 +71,7 @@ Below are some examples showing interesting patterns:
 
 From the plot above, we can see that the percentage of recidivised is higher for male than female, while female are less likely to be recidivised. 
 
-<div>
-<img src="https://user-images.githubusercontent.com/22537687/162010681-1b93b24c-e7a4-4508-ab25-964bc940df27.png" height="320"/>
-</div>
+![image] (https://user-images.githubusercontent.com/22537687/162010681-1b93b24c-e7a4-4508-ab25-964bc940df27.png) 
 
 Younger people (left side of the plot) are more likely to recidivised. And gang affiliated people are more associated with recidivisim.
 
@@ -84,9 +82,7 @@ Jupyter Notebook 2 [(Link)](https://github.com/skyrockets-21/Predicting-Recidivi
 
 According to our best model (Gradient Boosting), we discoved employment-related features are the most important features associated with recidivism:
 
-<div>
-<img src="https://user-images.githubusercontent.com/22537687/162039703-f94bfefa-1f03-4633-a6eb-0a8d31076aa0.png" width="500"/>
-</div>
+![image] (https://user-images.githubusercontent.com/22537687/162039703-f94bfefa-1f03-4633-a6eb-0a8d31076aa0.png) 
 
 **Models Used** \
 This question was answered with classification models and feature importance. Here we explored six classification models as follows:
